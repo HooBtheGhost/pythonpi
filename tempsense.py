@@ -10,8 +10,8 @@ def loop():
     while(True):
         # Get temperature reading...
         for i in range(0, 15):
-            chk = dht.readDHT11()  # read DHT11 and get a return value. Then determine whether data read is normal according to the return value.
-            if (chk is dht.DHTLIB_OK):  # read DHT11 and get a return value. Then determine whether data read is normal according to the return value.
+            chk = dht.readDHT11()  # read DHT11 and get a return value...
+            if (chk is dht.DHTLIB_OK):  # ... then determine whether data read is normal according to the return value.
                 # print("DHT11,OK!")
                 break
             time.sleep(0.1)
